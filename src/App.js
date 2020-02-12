@@ -17,7 +17,7 @@ import store from './store';
 function App() {
   return (
     <Provider store={store}>
-      <Router history={history}>
+      <Router history={history} basename={process.env.PUBLIC_URL}>
         <GlobalStyle />
         <Header />
         <Routes />
