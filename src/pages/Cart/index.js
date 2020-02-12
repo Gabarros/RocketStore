@@ -9,14 +9,14 @@ import * as CartActions from '../../store/modules/cart/actions';
 
 import { Container, ProductTable, Total } from './styles';
 
-function Cart({ cart, removeFromCart, updateAmount, total }) {
+function Cart({ cart, removeFromCart, updateAmountRequest, total }) {
 
   function increment(product){
-    updateAmount(product.id, product.amount + 1);
+    updateAmountRequest(product.id, product.amount + 1);
   }
 
   function decrement(product){
-    updateAmount(product.id, product.amount - 1);
+    updateAmountRequest(product.id, product.amount - 1);
   }
 
   return (
@@ -32,7 +32,7 @@ function Cart({ cart, removeFromCart, updateAmount, total }) {
           </tr>
         </thead>
         <tbody>
-          {cart.length === 0 ? null : cart.map(product => (
+          {cart.length === 0 ? <strong>Carrinho Vazio</strong> : cart.map(product => (
             <tr key={product.id}>
               <td>
                 <img src={product.image}
@@ -70,7 +70,9 @@ function Cart({ cart, removeFromCart, updateAmount, total }) {
       </ProductTable>
 
       <footer>
-        <button type="button">Finalizar pedido</button>
+      {cart.length === 0 ? null 
+      :  <button type="button">Finalizar pedido</button> }
+       
 
         <Total>
           <span>TOTAL</span>
