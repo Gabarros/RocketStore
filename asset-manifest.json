@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/RocketStore/static/js/main.74f9022e.chunk.js",
-    "main.js.map": "/RocketStore/static/js/main.74f9022e.chunk.js.map",
+    "main.js": "/RocketStore/static/js/main.fa0ca123.chunk.js",
+    "main.js.map": "/RocketStore/static/js/main.fa0ca123.chunk.js.map",
     "runtime-main.js": "/RocketStore/static/js/runtime-main.2baa3bcd.js",
     "runtime-main.js.map": "/RocketStore/static/js/runtime-main.2baa3bcd.js.map",
     "static/css/2.5dbdccff.chunk.css": "/RocketStore/static/css/2.5dbdccff.chunk.css",
     "static/js/2.75244ee1.chunk.js": "/RocketStore/static/js/2.75244ee1.chunk.js",
     "static/js/2.75244ee1.chunk.js.map": "/RocketStore/static/js/2.75244ee1.chunk.js.map",
     "index.html": "/RocketStore/index.html",
-    "precache-manifest.28fcd1cbd77f4ae2ea00470b232fb682.js": "/RocketStore/precache-manifest.28fcd1cbd77f4ae2ea00470b232fb682.js",
+    "precache-manifest.8616d62436d0b032de87ca6ad4c384ea.js": "/RocketStore/precache-manifest.8616d62436d0b032de87ca6ad4c384ea.js",
     "service-worker.js": "/RocketStore/service-worker.js",
     "static/css/2.5dbdccff.chunk.css.map": "/RocketStore/static/css/2.5dbdccff.chunk.css.map",
     "static/js/2.75244ee1.chunk.js.LICENSE.txt": "/RocketStore/static/js/2.75244ee1.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.2baa3bcd.js",
     "static/css/2.5dbdccff.chunk.css",
     "static/js/2.75244ee1.chunk.js",
-    "static/js/main.74f9022e.chunk.js"
+    "static/js/main.fa0ca123.chunk.js"
   ]
 }
