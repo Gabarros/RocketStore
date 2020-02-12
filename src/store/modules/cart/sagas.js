@@ -1,4 +1,5 @@
 import { call, select, put, all, takeLatest } from 'redux-saga/effects';
+import { toast } from 'react-toastify';
 
 import api from '../../../services/api';
 import { formatPrice } from '../../../util/format';
@@ -18,11 +19,12 @@ function* addToCart({ id }) {
   const amount = currentAmount + 1;
 
   if(amount > stockAmount){
-    console.tron.warn('erro');
+    toast.error('Produto fora de estoque no momento');
     return;
   }
 
   if (productExists) {
+    toast.success('Produto adicionado com sucesso!');
     yield put(updateAmount(id, amount));
   } else {
 
@@ -33,7 +35,7 @@ function* addToCart({ id }) {
       amount: 1,
       priceFormatted: formatPrice(response.data.price)
     };
-
+    toast.success('Produto adicionado com sucesso!');
     yield put(addToCartSucess(data));
 
   }
